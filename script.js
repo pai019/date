@@ -20,16 +20,3 @@ buttonN.addEventListener("mouseenter", () => {
   buttonN.style.left = `${randomX}px`;
   buttonN.style.top = `${randomY}px`;
 });
-
-function scaleStage() {
-  const stage = document.getElementById("stage");
-
-  const scaleX = window.innerWidth / 1440;
-  const scaleY = window.innerHeight / 1024;
-  const scale = Math.min(scaleX, scaleY);
-
-  stage.style.transform = `scale(${scale})`;
-}
-
-window.addEventListener("resize", scaleStage);
-window.addEventListener("load", scaleStage);
